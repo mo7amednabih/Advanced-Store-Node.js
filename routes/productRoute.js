@@ -28,11 +28,11 @@ router.use("/:productId/reviews", reviewsRoute);
 router
   .route("/")
   .post(
-    authServer.protect,
-    authServer.allowedTo("admin", "manager"),
-    uploadProductImages,
-    resizeProductImages,
-    createProductsValidator,
+    // authServer.protect,
+    // authServer.allowedTo("admin", "manager"),
+    // uploadProductImages,
+    // resizeProductImages,
+    // createProductsValidator,
     createProduct
   )
   .get(getProducts);
